@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01896B46861149FEE4E62B0EFD4AD5FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		09CA05F968369D218593A565E741171F /* Pods-GymBoardTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AEEA8F1905417F844764B4A9046E3B /* Pods-GymBoardTests-dummy.m */; };
+		0E2BF65305E32C175D6AE036437914C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		1CED85D6DDD6C77B24DC3D82183E3FDD /* Pods-GymBoardUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF3EC1AEA6985CCD873483CF1A431B6 /* Pods-GymBoardUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20070C9501DA782A1D5EDCB4F75AEDE2 /* Hue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD55FE44411E29D7F81C7714D163949F /* Hue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C0CCE674A4E1B109D3664D84A48BF89 /* Pods-GymBoardUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D74C775B58D2917B633C11FDB69FF /* Pods-GymBoardUITests-dummy.m */; };
+		4036A5EEE1D1132FF1390D81CD7DC292 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		5B42048C3ADC59AC19E1C168A5B0561C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		6731536CFB646AE6E31D72BCB6E4E873 /* Pods-GymBoard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1115347156C8A0A3890B20539E5462B /* Pods-GymBoard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70CBCB67007D356F14B8EC15118BA9E3 /* Hue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A17ADCE095E734E2CD428F66B5A0F /* Hue-dummy.m */; };
+		83790D4473D3F8965A7705C0EE1ADFC6 /* UIColor+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462FF50296DDF57AA922E95215295B4 /* UIColor+Hue.swift */; };
+		BA215FEB800D0782740C48D09AF5C4FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		E1A4D59ADA0793BB8D40CA4AF1D3D0BF /* Pods-GymBoardTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 199D4CC36F33DFFA7D1096D9E35EFFE0 /* Pods-GymBoardTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F85030977A6D1BAC697812B41A5905C7 /* UIImage+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C5C286F7827D05D6F8593CFDE437A /* UIImage+Hue.swift */; };
+		FC1A429B5A00E26EAF5118A4D79FABED /* Pods-GymBoard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF1C5B67A2F358C3C09ADD8B8BA515 /* Pods-GymBoard-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BDDCDF4CD57E167D4D71B2FCA129D96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2542602E50EDF091ADB18B4688DF34F;
+			remoteInfo = Hue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E44C4FE534914CD2EF147ABF102D05 /* Pods-GymBoardUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GymBoardUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		078BCE860CF1CD938BB75DE13891964E /* Pods_GymBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GymBoardTests.framework; path = "Pods-GymBoardTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0832002AB45BB124F4B6313C3EB5538D /* Pods-GymBoardTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GymBoardTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0DF3EC1AEA6985CCD873483CF1A431B6 /* Pods-GymBoardUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GymBoardUITests-umbrella.h"; sourceTree = "<group>"; };
+		0F03C8C91498567E55D170E17AFBCFBA /* Pods-GymBoard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GymBoard.modulemap"; sourceTree = "<group>"; };
+		176B48B82A635B9A4389C308CE604677 /* Pods-GymBoardTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GymBoardTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		199D4CC36F33DFFA7D1096D9E35EFFE0 /* Pods-GymBoardTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GymBoardTests-umbrella.h"; sourceTree = "<group>"; };
+		1E6A17ADCE095E734E2CD428F66B5A0F /* Hue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hue-dummy.m"; sourceTree = "<group>"; };
+		2936E52EFFE73C49FF767D5C07F975F7 /* Pods-GymBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBoard.release.xcconfig"; sourceTree = "<group>"; };
+		42FCDDF454C403183A583763D9FA98CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4484005A4B94913B99FE4A8EF8B51969 /* Pods-GymBoardTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GymBoardTests.modulemap"; sourceTree = "<group>"; };
+		46F22593FF1A1F72BB980D897C6F48A8 /* Pods-GymBoard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GymBoard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B8BDDFF41141D1CD94A4BD6F14CC01A /* Pods-GymBoard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GymBoard-acknowledgements.plist"; sourceTree = "<group>"; };
+		52AEEA8F1905417F844764B4A9046E3B /* Pods-GymBoardTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GymBoardTests-dummy.m"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		688446088715052697E98F1ECD5C1D56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3880C96210C0783ADD5776DBF3623A /* Pods_GymBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GymBoardUITests.framework; path = "Pods-GymBoardUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		87B4463EB9B6F6F9F005826D5AFB3327 /* Pods-GymBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89FE0C5FC226B0194EC53939A633EA93 /* Hue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hue.xcconfig; sourceTree = "<group>"; };
+		8EC6A03C778E42F78E8F1C91322CF0EA /* Pods-GymBoardTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBoardTests-frameworks.sh"; sourceTree = "<group>"; };
+		904C5C286F7827D05D6F8593CFDE437A /* UIImage+Hue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Hue.swift"; path = "Source/iOS/UIImage+Hue.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		956D74C775B58D2917B633C11FDB69FF /* Pods-GymBoardUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GymBoardUITests-dummy.m"; sourceTree = "<group>"; };
+		9FDF1C5B67A2F358C3C09ADD8B8BA515 /* Pods-GymBoard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GymBoard-dummy.m"; sourceTree = "<group>"; };
+		A462FF50296DDF57AA922E95215295B4 /* UIColor+Hue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Hue.swift"; path = "Source/iOS/UIColor+Hue.swift"; sourceTree = "<group>"; };
+		B11E9D5F266AA22119122F19F4C00634 /* Pods-GymBoardTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBoardTests-resources.sh"; sourceTree = "<group>"; };
+		B12D31B674B42B48BC49BA6332609AE9 /* Pods-GymBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA97C27512D3BA8B49CBBA9FAB923955 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD55FE44411E29D7F81C7714D163949F /* Hue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hue-umbrella.h"; sourceTree = "<group>"; };
+		C1115347156C8A0A3890B20539E5462B /* Pods-GymBoard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GymBoard-umbrella.h"; sourceTree = "<group>"; };
+		C18C099CBB5402573CDEC2C1E666476B /* Pods-GymBoardUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GymBoardUITests.modulemap"; sourceTree = "<group>"; };
+		C1921C16D45E40744B69F734202CE41D /* Hue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Hue.modulemap; sourceTree = "<group>"; };
+		CD76D1A8C5D5E6A78654935248799A29 /* Pods-GymBoardUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBoardUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CEFC062D8E3C8EEAE43CB86574D6E541 /* Hue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hue.framework; path = Hue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D319B7F2A66FC9B8AAD8797A178E04E3 /* Pods-GymBoardUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GymBoardUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D34F82E664CB693412440F8B6B4D4475 /* Pods_GymBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GymBoard.framework; path = "Pods-GymBoard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41A4BD35750E3548FCDB70CA833FB6F /* Pods-GymBoardUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBoardUITests-resources.sh"; sourceTree = "<group>"; };
+		D4DE408A8E7876013A4E75D8B9A23A26 /* Pods-GymBoard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBoard-frameworks.sh"; sourceTree = "<group>"; };
+		DB99902A23FDC90A59A306CAEBEF0F24 /* Hue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hue-prefix.pch"; sourceTree = "<group>"; };
+		E1F43F69EC00FF3A19D5EA677EDC3376 /* Pods-GymBoard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBoard-resources.sh"; sourceTree = "<group>"; };
+		F4A4466A7E8EF85CB3EF07BD322BFA8E /* Pods-GymBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F609BD44E7066AD30F75B44C72491427 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65599B6449EB32F4A1CE73B38916E1D /* Pods-GymBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		F8FA9B44EAAC0618B42E21998FEA7F12 /* Pods-GymBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBoardTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		069FFF7CFE5662FD9739C0C7FE3D265B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01896B46861149FEE4E62B0EFD4AD5FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A325AAFE109272B85689483EA39F9B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B42048C3ADC59AC19E1C168A5B0561C /* Foundation.framework in Frameworks */,
+				BA215FEB800D0782740C48D09AF5C4FA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428E370DC4F9B9FAF718F5C25FB64F71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4036A5EEE1D1132FF1390D81CD7DC292 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0F00CA5750F21D89695F35839E61AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2BF65305E32C175D6AE036437914C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C0494D4622368C3D2F78AC349CB60F6 /* Pods-GymBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				42FCDDF454C403183A583763D9FA98CD /* Info.plist */,
+				4484005A4B94913B99FE4A8EF8B51969 /* Pods-GymBoardTests.modulemap */,
+				176B48B82A635B9A4389C308CE604677 /* Pods-GymBoardTests-acknowledgements.markdown */,
+				0832002AB45BB124F4B6313C3EB5538D /* Pods-GymBoardTests-acknowledgements.plist */,
+				52AEEA8F1905417F844764B4A9046E3B /* Pods-GymBoardTests-dummy.m */,
+				8EC6A03C778E42F78E8F1C91322CF0EA /* Pods-GymBoardTests-frameworks.sh */,
+				B11E9D5F266AA22119122F19F4C00634 /* Pods-GymBoardTests-resources.sh */,
+				199D4CC36F33DFFA7D1096D9E35EFFE0 /* Pods-GymBoardTests-umbrella.h */,
+				B12D31B674B42B48BC49BA6332609AE9 /* Pods-GymBoardTests.debug.xcconfig */,
+				F8FA9B44EAAC0618B42E21998FEA7F12 /* Pods-GymBoardTests.release.xcconfig */,
+			);
+			name = "Pods-GymBoardTests";
+			path = "Target Support Files/Pods-GymBoardTests";
+			sourceTree = "<group>";
+		};
+		431922D87D7C787E44AC9FFA660AADBD /* Pods-GymBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				688446088715052697E98F1ECD5C1D56 /* Info.plist */,
+				C18C099CBB5402573CDEC2C1E666476B /* Pods-GymBoardUITests.modulemap */,
+				05E44C4FE534914CD2EF147ABF102D05 /* Pods-GymBoardUITests-acknowledgements.markdown */,
+				D319B7F2A66FC9B8AAD8797A178E04E3 /* Pods-GymBoardUITests-acknowledgements.plist */,
+				956D74C775B58D2917B633C11FDB69FF /* Pods-GymBoardUITests-dummy.m */,
+				CD76D1A8C5D5E6A78654935248799A29 /* Pods-GymBoardUITests-frameworks.sh */,
+				D41A4BD35750E3548FCDB70CA833FB6F /* Pods-GymBoardUITests-resources.sh */,
+				0DF3EC1AEA6985CCD873483CF1A431B6 /* Pods-GymBoardUITests-umbrella.h */,
+				F4A4466A7E8EF85CB3EF07BD322BFA8E /* Pods-GymBoardUITests.debug.xcconfig */,
+				87B4463EB9B6F6F9F005826D5AFB3327 /* Pods-GymBoardUITests.release.xcconfig */,
+			);
+			name = "Pods-GymBoardUITests";
+			path = "Target Support Files/Pods-GymBoardUITests";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		637FA133B16CBEA765BAFA1D84B01E1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC062D8E3C8EEAE43CB86574D6E541 /* Hue.framework */,
+				D34F82E664CB693412440F8B6B4D4475 /* Pods_GymBoard.framework */,
+				078BCE860CF1CD938BB75DE13891964E /* Pods_GymBoardTests.framework */,
+				7E3880C96210C0783ADD5776DBF3623A /* Pods_GymBoardUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67A144A6763DD26A41CF6B3ECD8BB695 /* Pods-GymBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F609BD44E7066AD30F75B44C72491427 /* Info.plist */,
+				0F03C8C91498567E55D170E17AFBCFBA /* Pods-GymBoard.modulemap */,
+				46F22593FF1A1F72BB980D897C6F48A8 /* Pods-GymBoard-acknowledgements.markdown */,
+				4B8BDDFF41141D1CD94A4BD6F14CC01A /* Pods-GymBoard-acknowledgements.plist */,
+				9FDF1C5B67A2F358C3C09ADD8B8BA515 /* Pods-GymBoard-dummy.m */,
+				D4DE408A8E7876013A4E75D8B9A23A26 /* Pods-GymBoard-frameworks.sh */,
+				E1F43F69EC00FF3A19D5EA677EDC3376 /* Pods-GymBoard-resources.sh */,
+				C1115347156C8A0A3890B20539E5462B /* Pods-GymBoard-umbrella.h */,
+				F65599B6449EB32F4A1CE73B38916E1D /* Pods-GymBoard.debug.xcconfig */,
+				2936E52EFFE73C49FF767D5C07F975F7 /* Pods-GymBoard.release.xcconfig */,
+			);
+			name = "Pods-GymBoard";
+			path = "Target Support Files/Pods-GymBoard";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				B3BFD46E7DC9057F91B7F6F99F290FA4 /* Pods */,
+				637FA133B16CBEA765BAFA1D84B01E1B /* Products */,
+				FA353E15DE0336F9B70AC4D39047264A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		99BCA580C8C3137C76EED3391D7EB540 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1921C16D45E40744B69F734202CE41D /* Hue.modulemap */,
+				89FE0C5FC226B0194EC53939A633EA93 /* Hue.xcconfig */,
+				1E6A17ADCE095E734E2CD428F66B5A0F /* Hue-dummy.m */,
+				DB99902A23FDC90A59A306CAEBEF0F24 /* Hue-prefix.pch */,
+				BD55FE44411E29D7F81C7714D163949F /* Hue-umbrella.h */,
+				BA97C27512D3BA8B49CBBA9FAB923955 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Hue";
+			sourceTree = "<group>";
+		};
+		B3BFD46E7DC9057F91B7F6F99F290FA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD35ECC4482B2D4B47BA81C1897567FE /* Hue */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD35ECC4482B2D4B47BA81C1897567FE /* Hue */ = {
+			isa = PBXGroup;
+			children = (
+				A462FF50296DDF57AA922E95215295B4 /* UIColor+Hue.swift */,
+				904C5C286F7827D05D6F8593CFDE437A /* UIImage+Hue.swift */,
+				99BCA580C8C3137C76EED3391D7EB540 /* Support Files */,
+			);
+			name = Hue;
+			path = Hue;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FA353E15DE0336F9B70AC4D39047264A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67A144A6763DD26A41CF6B3ECD8BB695 /* Pods-GymBoard */,
+				2C0494D4622368C3D2F78AC349CB60F6 /* Pods-GymBoardTests */,
+				431922D87D7C787E44AC9FFA660AADBD /* Pods-GymBoardUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4722CB4782ADF25CC19EF0A2BCFB4F6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A4D59ADA0793BB8D40CA4AF1D3D0BF /* Pods-GymBoardTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894A424BA27A67CCB3410D9994C5EAAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6731536CFB646AE6E31D72BCB6E4E873 /* Pods-GymBoard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE697C074C4BBCCE49976230A79FA631 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CED85D6DDD6C77B24DC3D82183E3FDD /* Pods-GymBoardUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7A1A54E14DBFCE33CEEFA24B23A9282 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20070C9501DA782A1D5EDCB4F75AEDE2 /* Hue-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1ED402F32C19C9C2186FBEB2811F3C9E /* Pods-GymBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6442FF20301929D68113B99FFD422D9 /* Build configuration list for PBXNativeTarget "Pods-GymBoardTests" */;
+			buildPhases = (
+				0F7B4E903CB5A052B3BD9EA7E1299D8D /* Sources */,
+				428E370DC4F9B9FAF718F5C25FB64F71 /* Frameworks */,
+				4722CB4782ADF25CC19EF0A2BCFB4F6E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GymBoardTests";
+			productName = "Pods-GymBoardTests";
+			productReference = 078BCE860CF1CD938BB75DE13891964E /* Pods_GymBoardTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2542602E50EDF091ADB18B4688DF34F /* Hue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7517784A4541FCDE27289AB3A48C7E6 /* Build configuration list for PBXNativeTarget "Hue" */;
+			buildPhases = (
+				5447F17F074A6885C2DE5EA00B620E76 /* Sources */,
+				0A325AAFE109272B85689483EA39F9B2 /* Frameworks */,
+				F7A1A54E14DBFCE33CEEFA24B23A9282 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hue;
+			productName = Hue;
+			productReference = CEFC062D8E3C8EEAE43CB86574D6E541 /* Hue.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF7691A08117DCF5A61FCDF362FC0DD7 /* Pods-GymBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF214AC059F44F767947ADC639142AE /* Build configuration list for PBXNativeTarget "Pods-GymBoard" */;
+			buildPhases = (
+				B44390DB20B94795EC3DA2611FD7143C /* Sources */,
+				069FFF7CFE5662FD9739C0C7FE3D265B /* Frameworks */,
+				894A424BA27A67CCB3410D9994C5EAAC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A41083EF27EA1925E07ABC8E07B720A /* PBXTargetDependency */,
+			);
+			name = "Pods-GymBoard";
+			productName = "Pods-GymBoard";
+			productReference = D34F82E664CB693412440F8B6B4D4475 /* Pods_GymBoard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D928EA4FC576EFE6DBB0CA08C63F263A /* Pods-GymBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 558EDCD1378FA83042D5C0C7CC680E4C /* Build configuration list for PBXNativeTarget "Pods-GymBoardUITests" */;
+			buildPhases = (
+				A4F428B87D537C45BA811C308C2A8BBA /* Sources */,
+				7A0F00CA5750F21D89695F35839E61AF /* Frameworks */,
+				CE697C074C4BBCCE49976230A79FA631 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GymBoardUITests";
+			productName = "Pods-GymBoardUITests";
+			productReference = 7E3880C96210C0783ADD5776DBF3623A /* Pods_GymBoardUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 637FA133B16CBEA765BAFA1D84B01E1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2542602E50EDF091ADB18B4688DF34F /* Hue */,
+				BF7691A08117DCF5A61FCDF362FC0DD7 /* Pods-GymBoard */,
+				1ED402F32C19C9C2186FBEB2811F3C9E /* Pods-GymBoardTests */,
+				D928EA4FC576EFE6DBB0CA08C63F263A /* Pods-GymBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F7B4E903CB5A052B3BD9EA7E1299D8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CA05F968369D218593A565E741171F /* Pods-GymBoardTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5447F17F074A6885C2DE5EA00B620E76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CBCB67007D356F14B8EC15118BA9E3 /* Hue-dummy.m in Sources */,
+				83790D4473D3F8965A7705C0EE1ADFC6 /* UIColor+Hue.swift in Sources */,
+				F85030977A6D1BAC697812B41A5905C7 /* UIImage+Hue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F428B87D537C45BA811C308C2A8BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0CCE674A4E1B109D3664D84A48BF89 /* Pods-GymBoardUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44390DB20B94795EC3DA2611FD7143C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1A429B5A00E26EAF5118A4D79FABED /* Pods-GymBoard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A41083EF27EA1925E07ABC8E07B720A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Hue;
+			target = B2542602E50EDF091ADB18B4688DF34F /* Hue */;
+			targetProxy = 8BDDCDF4CD57E167D4D71B2FCA129D96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0642E01B0031B0E9B81EAC881F995E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2936E52EFFE73C49FF767D5C07F975F7 /* Pods-GymBoard.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBoard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBoard/Pods-GymBoard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GymBoard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DF5E8A9DD52C75A809093B08C153CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B12D31B674B42B48BC49BA6332609AE9 /* Pods-GymBoardTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBoardTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBoardTests/Pods-GymBoardTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GymBoardTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EFA22BF168C987FF8EA5F32B99CC520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FE0C5FC226B0194EC53939A633EA93 /* Hue.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hue/Hue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hue/Hue.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Hue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6295403C007BF85DEAC9BDB4A3C09AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87B4463EB9B6F6F9F005826D5AFB3327 /* Pods-GymBoardUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBoardUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBoardUITests/Pods-GymBoardUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GymBoardUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		645BDD3762DC1A951EBAC6860E08B097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FE0C5FC226B0194EC53939A633EA93 /* Hue.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hue/Hue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hue/Hue.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Hue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		678747F1314B6670B9C31EF7839D21B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65599B6449EB32F4A1CE73B38916E1D /* Pods-GymBoard.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBoard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBoard/Pods-GymBoard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GymBoard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717EE019448651900DB542662A95C928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A4466A7E8EF85CB3EF07BD322BFA8E /* Pods-GymBoardUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBoardUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBoardUITests/Pods-GymBoardUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GymBoardUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FA45C48D715FFC5A4657276DDBD2796F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8FA9B44EAAC0618B42E21998FEA7F12 /* Pods-GymBoardTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBoardTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBoardTests/Pods-GymBoardTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GymBoardTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		558EDCD1378FA83042D5C0C7CC680E4C /* Build configuration list for PBXNativeTarget "Pods-GymBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717EE019448651900DB542662A95C928 /* Debug */,
+				6295403C007BF85DEAC9BDB4A3C09AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF214AC059F44F767947ADC639142AE /* Build configuration list for PBXNativeTarget "Pods-GymBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				678747F1314B6670B9C31EF7839D21B5 /* Debug */,
+				0642E01B0031B0E9B81EAC881F995E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7517784A4541FCDE27289AB3A48C7E6 /* Build configuration list for PBXNativeTarget "Hue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645BDD3762DC1A951EBAC6860E08B097 /* Debug */,
+				4EFA22BF168C987FF8EA5F32B99CC520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6442FF20301929D68113B99FFD422D9 /* Build configuration list for PBXNativeTarget "Pods-GymBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DF5E8A9DD52C75A809093B08C153CD7 /* Debug */,
+				FA45C48D715FFC5A4657276DDBD2796F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

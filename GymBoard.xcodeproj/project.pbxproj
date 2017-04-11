@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19A0A1DD662861EEDED0B150 /* Pods_GymBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272ED08F23AFA01EDAE87B02 /* Pods_GymBoardUITests.framework */; };
+		C51130B81E9BE2E000A8E943 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51130B71E9BE2E000A8E943 /* AddNewViewController.swift */; };
+		C518EC8D1E6DF02500331D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518EC8C1E6DF02500331D86 /* AppDelegate.swift */; };
+		C518EC921E6DF02500331D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C518EC901E6DF02500331D86 /* Main.storyboard */; };
+		C518EC941E6DF02500331D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C518EC931E6DF02500331D86 /* Assets.xcassets */; };
+		C518EC971E6DF02500331D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C518EC951E6DF02500331D86 /* LaunchScreen.storyboard */; };
+		C518ECA21E6DF02500331D86 /* GymBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518ECA11E6DF02500331D86 /* GymBoardTests.swift */; };
+		C518ECAD1E6DF02500331D86 /* GymBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518ECAC1E6DF02500331D86 /* GymBoardUITests.swift */; };
+		C54B67951E8D079D000562B6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67931E8D079D000562B6 /* Realm.framework */; };
+		C54B67961E8D079D000562B6 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67931E8D079D000562B6 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C54B67971E8D079D000562B6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67941E8D079D000562B6 /* RealmSwift.framework */; };
+		C54B67981E8D079D000562B6 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67941E8D079D000562B6 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C56E63FC1E6F337E00A65B03 /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E63FB1E6F337E00A65B03 /* GymViewController.swift */; };
+		C56E63FE1E6F346700A65B03 /* GymTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E63FD1E6F346700A65B03 /* GymTableViewCell.swift */; };
+		C5778BF91E7017050074E607 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5778BF81E7017050074E607 /* Entry.swift */; };
+		C59F61DF1E9CDDCC000C7073 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59F61DE1E9CDDCC000C7073 /* TimeManager.swift */; };
+		C59F61E11E9CE002000C7073 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59F61E01E9CE002000C7073 /* ToastMessage.swift */; };
+		D408D410C0239C69558D8CCF /* Pods_GymBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7F5B2C45352C6BCCCACAEE /* Pods_GymBoard.framework */; };
+		D928662754EEA66587573362 /* Pods_GymBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160F02F832CBF94761BD443F /* Pods_GymBoardTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C518EC9E1E6DF02500331D86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C518EC811E6DF02400331D86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C518EC881E6DF02500331D86;
+			remoteInfo = GymBoard;
+		};
+		C518ECA91E6DF02500331D86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C518EC811E6DF02400331D86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C518EC881E6DF02500331D86;
+			remoteInfo = GymBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C54B67991E8D079D000562B6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C54B67981E8D079D000562B6 /* RealmSwift.framework in Embed Frameworks */,
+				C54B67961E8D079D000562B6 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		160F02F832CBF94761BD443F /* Pods_GymBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D4393327D9E24C4CC25C85 /* Pods-GymBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoardUITests/Pods-GymBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		272ED08F23AFA01EDAE87B02 /* Pods_GymBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2576F45D7E062157873C49 /* Pods-GymBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoardUITests/Pods-GymBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B7F5B2C45352C6BCCCACAEE /* Pods_GymBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D45F44C9F8A561688BECB71 /* Pods-GymBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoard/Pods-GymBoard.release.xcconfig"; sourceTree = "<group>"; };
+		8405B22288506880277ED289 /* Pods-GymBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoardTests/Pods-GymBoardTests.release.xcconfig"; sourceTree = "<group>"; };
+		8FD7257D99B86DABFB02BB16 /* Pods-GymBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoard/Pods-GymBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		C51130B71E9BE2E000A8E943 /* AddNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		C518EC891E6DF02500331D86 /* GymBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C518EC8C1E6DF02500331D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C518EC911E6DF02500331D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C518EC931E6DF02500331D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C518EC961E6DF02500331D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C518EC981E6DF02500331D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C518EC9D1E6DF02500331D86 /* GymBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C518ECA11E6DF02500331D86 /* GymBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymBoardTests.swift; sourceTree = "<group>"; };
+		C518ECA31E6DF02500331D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C518ECA81E6DF02500331D86 /* GymBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C518ECAC1E6DF02500331D86 /* GymBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymBoardUITests.swift; sourceTree = "<group>"; };
+		C518ECAE1E6DF02500331D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54B67931E8D079D000562B6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		C54B67941E8D079D000562B6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		C56E63FB1E6F337E00A65B03 /* GymViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
+		C56E63FD1E6F346700A65B03 /* GymTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymTableViewCell.swift; sourceTree = "<group>"; };
+		C5778BF81E7017050074E607 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		C59F61DE1E9CDDCC000C7073 /* TimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		C59F61E01E9CE002000C7073 /* ToastMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
+		EA3857175DD21CDF5F2EA177 /* Pods-GymBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoardTests/Pods-GymBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C518EC861E6DF02500331D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54B67971E8D079D000562B6 /* RealmSwift.framework in Frameworks */,
+				C54B67951E8D079D000562B6 /* Realm.framework in Frameworks */,
+				D408D410C0239C69558D8CCF /* Pods_GymBoard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C518EC9A1E6DF02500331D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D928662754EEA66587573362 /* Pods_GymBoardTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C518ECA51E6DF02500331D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A0A1DD662861EEDED0B150 /* Pods_GymBoardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91DADD8B1635F617355093E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FD7257D99B86DABFB02BB16 /* Pods-GymBoard.debug.xcconfig */,
+				3D45F44C9F8A561688BECB71 /* Pods-GymBoard.release.xcconfig */,
+				EA3857175DD21CDF5F2EA177 /* Pods-GymBoardTests.debug.xcconfig */,
+				8405B22288506880277ED289 /* Pods-GymBoardTests.release.xcconfig */,
+				2A2576F45D7E062157873C49 /* Pods-GymBoardUITests.debug.xcconfig */,
+				20D4393327D9E24C4CC25C85 /* Pods-GymBoardUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C518EC801E6DF02400331D86 = {
+			isa = PBXGroup;
+			children = (
+				C54B67931E8D079D000562B6 /* Realm.framework */,
+				C54B67941E8D079D000562B6 /* RealmSwift.framework */,
+				C518EC8B1E6DF02500331D86 /* GymBoard */,
+				C518ECA01E6DF02500331D86 /* GymBoardTests */,
+				C518ECAB1E6DF02500331D86 /* GymBoardUITests */,
+				C518EC8A1E6DF02500331D86 /* Products */,
+				91DADD8B1635F617355093E7 /* Pods */,
+				F51322BEDE08BA7392B1E133 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C518EC8A1E6DF02500331D86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C518EC891E6DF02500331D86 /* GymBoard.app */,
+				C518EC9D1E6DF02500331D86 /* GymBoardTests.xctest */,
+				C518ECA81E6DF02500331D86 /* GymBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C518EC8B1E6DF02500331D86 /* GymBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C518EC901E6DF02500331D86 /* Main.storyboard */,
+				C5D525B11E8C17E1000B73CC /* Config */,
+				C5D525B41E8C17FE000B73CC /* ViewControllers */,
+				C5D525B21E8C17EB000B73CC /* Objects */,
+				C5D525B31E8C17F4000B73CC /* Adapters */,
+				C563A48A1E9D129100346A82 /* Views */,
+				C59F61DE1E9CDDCC000C7073 /* TimeManager.swift */,
+			);
+			path = GymBoard;
+			sourceTree = "<group>";
+		};
+		C518ECA01E6DF02500331D86 /* GymBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				C518ECA11E6DF02500331D86 /* GymBoardTests.swift */,
+				C518ECA31E6DF02500331D86 /* Info.plist */,
+			);
+			path = GymBoardTests;
+			sourceTree = "<group>";
+		};
+		C518ECAB1E6DF02500331D86 /* GymBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C518ECAC1E6DF02500331D86 /* GymBoardUITests.swift */,
+				C518ECAE1E6DF02500331D86 /* Info.plist */,
+			);
+			path = GymBoardUITests;
+			sourceTree = "<group>";
+		};
+		C563A48A1E9D129100346A82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C59F61E01E9CE002000C7073 /* ToastMessage.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C5D525B11E8C17E1000B73CC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C518EC931E6DF02500331D86 /* Assets.xcassets */,
+				C518EC951E6DF02500331D86 /* LaunchScreen.storyboard */,
+				C518EC981E6DF02500331D86 /* Info.plist */,
+				C518EC8C1E6DF02500331D86 /* AppDelegate.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		C5D525B21E8C17EB000B73CC /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C5778BF81E7017050074E607 /* Entry.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		C5D525B31E8C17F4000B73CC /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				C56E63FD1E6F346700A65B03 /* GymTableViewCell.swift */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
+		C5D525B41E8C17FE000B73CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C56E63FB1E6F337E00A65B03 /* GymViewController.swift */,
+				C51130B71E9BE2E000A8E943 /* AddNewViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F51322BEDE08BA7392B1E133 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F5B2C45352C6BCCCACAEE /* Pods_GymBoard.framework */,
+				160F02F832CBF94761BD443F /* Pods_GymBoardTests.framework */,
+				272ED08F23AFA01EDAE87B02 /* Pods_GymBoardUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C518EC881E6DF02500331D86 /* GymBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C518ECB11E6DF02500331D86 /* Build configuration list for PBXNativeTarget "GymBoard" */;
+			buildPhases = (
+				61DC29A1211E69AFA5B6F4B6 /* [CP] Check Pods Manifest.lock */,
+				C518EC851E6DF02500331D86 /* Sources */,
+				C518EC861E6DF02500331D86 /* Frameworks */,
+				C518EC871E6DF02500331D86 /* Resources */,
+				C54B67991E8D079D000562B6 /* Embed Frameworks */,
+				23EB3A4FC7BBB57E6461597A /* [CP] Embed Pods Frameworks */,
+				4CFB5E5EC4226E258D2FCD5B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymBoard;
+			productName = GymBoard;
+			productReference = C518EC891E6DF02500331D86 /* GymBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C518EC9C1E6DF02500331D86 /* GymBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C518ECB41E6DF02500331D86 /* Build configuration list for PBXNativeTarget "GymBoardTests" */;
+			buildPhases = (
+				2911946323142112E90E8165 /* [CP] Check Pods Manifest.lock */,
+				C518EC991E6DF02500331D86 /* Sources */,
+				C518EC9A1E6DF02500331D86 /* Frameworks */,
+				C518EC9B1E6DF02500331D86 /* Resources */,
+				2DBEAF96C41FF26850AB06BE /* [CP] Embed Pods Frameworks */,
+				D39B9414B5E25BB244389081 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C518EC9F1E6DF02500331D86 /* PBXTargetDependency */,
+			);
+			name = GymBoardTests;
+			productName = GymBoardTests;
+			productReference = C518EC9D1E6DF02500331D86 /* GymBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C518ECA71E6DF02500331D86 /* GymBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C518ECB71E6DF02500331D86 /* Build configuration list for PBXNativeTarget "GymBoardUITests" */;
+			buildPhases = (
+				44357D0CF4005ECD93C82BCC /* [CP] Check Pods Manifest.lock */,
+				C518ECA41E6DF02500331D86 /* Sources */,
+				C518ECA51E6DF02500331D86 /* Frameworks */,
+				C518ECA61E6DF02500331D86 /* Resources */,
+				2CD389011A3B29D3D70C64E1 /* [CP] Embed Pods Frameworks */,
+				1FD57D0317E91804E282FF15 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C518ECAA1E6DF02500331D86 /* PBXTargetDependency */,
+			);
+			name = GymBoardUITests;
+			productName = GymBoardUITests;
+			productReference = C518ECA81E6DF02500331D86 /* GymBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C518EC811E6DF02400331D86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JoBernas;
+				TargetAttributes = {
+					C518EC881E6DF02500331D86 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 23YZPA6FTY;
+						ProvisioningStyle = Automatic;
+					};
+					C518EC9C1E6DF02500331D86 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C518EC881E6DF02500331D86;
+					};
+					C518ECA71E6DF02500331D86 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C518EC881E6DF02500331D86;
+					};
+				};
+			};
+			buildConfigurationList = C518EC841E6DF02400331D86 /* Build configuration list for PBXProject "GymBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C518EC801E6DF02400331D86;
+			productRefGroup = C518EC8A1E6DF02500331D86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C518EC881E6DF02500331D86 /* GymBoard */,
+				C518EC9C1E6DF02500331D86 /* GymBoardTests */,
+				C518ECA71E6DF02500331D86 /* GymBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C518EC871E6DF02500331D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C518EC971E6DF02500331D86 /* LaunchScreen.storyboard in Resources */,
+				C518EC941E6DF02500331D86 /* Assets.xcassets in Resources */,
+				C518EC921E6DF02500331D86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C518EC9B1E6DF02500331D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C518ECA61E6DF02500331D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FD57D0317E91804E282FF15 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymBoardUITests/Pods-GymBoardUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23EB3A4FC7BBB57E6461597A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymBoard/Pods-GymBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2911946323142112E90E8165 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2CD389011A3B29D3D70C64E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymBoardUITests/Pods-GymBoardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DBEAF96C41FF26850AB06BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymBoardTests/Pods-GymBoardTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44357D0CF4005ECD93C82BCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4CFB5E5EC4226E258D2FCD5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymBoard/Pods-GymBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61DC29A1211E69AFA5B6F4B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D39B9414B5E25BB244389081 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymBoardTests/Pods-GymBoardTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C518EC851E6DF02500331D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51130B81E9BE2E000A8E943 /* AddNewViewController.swift in Sources */,
+				C5778BF91E7017050074E607 /* Entry.swift in Sources */,
+				C59F61DF1E9CDDCC000C7073 /* TimeManager.swift in Sources */,
+				C59F61E11E9CE002000C7073 /* ToastMessage.swift in Sources */,
+				C56E63FE1E6F346700A65B03 /* GymTableViewCell.swift in Sources */,
+				C56E63FC1E6F337E00A65B03 /* GymViewController.swift in Sources */,
+				C518EC8D1E6DF02500331D86 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C518EC991E6DF02500331D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C518ECA21E6DF02500331D86 /* GymBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C518ECA41E6DF02500331D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C518ECAD1E6DF02500331D86 /* GymBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C518EC9F1E6DF02500331D86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C518EC881E6DF02500331D86 /* GymBoard */;
+			targetProxy = C518EC9E1E6DF02500331D86 /* PBXContainerItemProxy */;
+		};
+		C518ECAA1E6DF02500331D86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C518EC881E6DF02500331D86 /* GymBoard */;
+			targetProxy = C518ECA91E6DF02500331D86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C518EC901E6DF02500331D86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C518EC911E6DF02500331D86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C518EC951E6DF02500331D86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C518EC961E6DF02500331D86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C518ECAF1E6DF02500331D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C518ECB01E6DF02500331D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C518ECB21E6DF02500331D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD7257D99B86DABFB02BB16 /* Pods-GymBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 23YZPA6FTY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GymBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jobernas.GymBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C518ECB31E6DF02500331D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D45F44C9F8A561688BECB71 /* Pods-GymBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 23YZPA6FTY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GymBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jobernas.GymBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C518ECB51E6DF02500331D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA3857175DD21CDF5F2EA177 /* Pods-GymBoardTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GymBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jobernas.GymBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymBoard.app/GymBoard";
+			};
+			name = Debug;
+		};
+		C518ECB61E6DF02500331D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8405B22288506880277ED289 /* Pods-GymBoardTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GymBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jobernas.GymBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymBoard.app/GymBoard";
+			};
+			name = Release;
+		};
+		C518ECB81E6DF02500331D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A2576F45D7E062157873C49 /* Pods-GymBoardUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GymBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jobernas.GymBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GymBoard;
+			};
+			name = Debug;
+		};
+		C518ECB91E6DF02500331D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D4393327D9E24C4CC25C85 /* Pods-GymBoardUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GymBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jobernas.GymBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GymBoard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C518EC841E6DF02400331D86 /* Build configuration list for PBXProject "GymBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C518ECAF1E6DF02500331D86 /* Debug */,
+				C518ECB01E6DF02500331D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C518ECB11E6DF02500331D86 /* Build configuration list for PBXNativeTarget "GymBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C518ECB21E6DF02500331D86 /* Debug */,
+				C518ECB31E6DF02500331D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C518ECB41E6DF02500331D86 /* Build configuration list for PBXNativeTarget "GymBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C518ECB51E6DF02500331D86 /* Debug */,
+				C518ECB61E6DF02500331D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C518ECB71E6DF02500331D86 /* Build configuration list for PBXNativeTarget "GymBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C518ECB81E6DF02500331D86 /* Debug */,
+				C518ECB91E6DF02500331D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C518EC811E6DF02400331D86 /* Project object */;
+}

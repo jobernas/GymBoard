@@ -15,6 +15,11 @@ class TimeManager {
         return TimeManager.convertDateToAppFormate(date: date)
     }
     
+    
+    /// YYYY-MM-DD
+    ///
+    /// - Parameter date: <#date description#>
+    /// - Returns: <#return value description#>
     static func convertDateToAppFormate(date: Date) -> String {
         let calendar = Calendar.current
         let dayC = calendar.component(.day, from: date)
@@ -23,6 +28,6 @@ class TimeManager {
         
         let day = (dayC > 9 ? "\(dayC)" : "0\(dayC)")
         let mouth = (mouthC > 9 ? "\(mouthC)" : "0\(mouthC)")
-        return "\(day)-\(mouth)-\(yearC)"
+        return "\(yearC)-\(mouth)-\(day)"
     }
 }

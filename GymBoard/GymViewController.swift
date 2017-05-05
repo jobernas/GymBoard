@@ -12,22 +12,16 @@ class GymViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var data = [Entry]()
-    
-    var d: [Entry]? // Pode nao existir
-    //var d: [Entry]! // Tem de existir
+    var data = [(String, Array<Entry>)]()
+    var selectedIndex: Int = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //DEBUG
+//         EntryCRUD.clearDB()
         
         // Do any additional setup after loading the view.
-        data.append(Entry(label: .Weight , unit: "Kg", value: 70.0))
-        data.append(Entry(label: .Height , unit: "cm", value: 170.0))
-        data.append(Entry(label: .LeanMass , unit: "Kg", value: 50))
-        data.append(Entry(label: .FatMass , unit: "Kg", value: 20))
-        data.append(Entry(label: .Water , unit: "%", value: 54.2))
-        data.append(Entry(label: .BodyMassIndex , unit: "", value: 26))
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,26 +29,49 @@ class GymViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    // MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let vc = segue.destination as? BoardTableViewController {
-//            //Get instance in vc and pass variable 'sender' or variable from this class
-//        }
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.loadDataFromDB()
+        self.tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GymToAddEdit", let addEntryVC = segue.destination as? AddNewViewController {
+            if self.selectedIndex != -1 {
+                addEntryVC.setData(self.data[self.selectedIndex].0, array:self.data[self.selectedIndex].1)
+                self.selectedIndex = -1
+            }
+        }
+    }
+    
+    private func loadDataFromDB(){
+        self.data.removeAll()
+        let dbData = EntryCRUD.getAllEntries()
+        print(dbData)
+        var auxDict = [String : Array<Entry>]()
+        for entry in Array(dbData) {
+            if (auxDict.index(forKey: entry.date) != nil) {
+                auxDict[entry.date]!.append(entry)
+            }else{
+                auxDict[entry.date] = Array<Entry>()
+                auxDict[entry.date]!.append(entry)
+            }
+        }
+        self.data = auxDict.sorted(by: { $0.0 > $1.0 })
+    }
 
 }
 
 extension GymViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
+        let group = self.data[section]
+        return group.1.count
     }
     
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 3
-//    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.data.count
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let c = tableView.dequeueReusableCell(withIdentifier: "GymTableViewCell", for: indexPath)
@@ -63,26 +80,50 @@ extension GymViewController: UITableViewDataSource {
             return c
         }
         
-        let entry = self.data[indexPath.row]
-//        cell.backgroundColor = (indexPath.row % 2 == 0) ? UIColor.grey : UIColor.white
+        let group = self.data[indexPath.section]
+        let entry = group.1[indexPath.row]
         cell.entry = entry
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "Section \(section)"
-//    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionView = EntrySectionHeader(frame: CGRect(x:0, y:0, width:375, height: 64))
+        let group = self.data[section]
+        let date = group.0
+        sectionView.title = "\(date)"
+        sectionView.handler = self as HandleEntries
+        sectionView.index = section
+        return sectionView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 64.0
+    }
+    
+}
+
+extension GymViewController: HandleEntries {
+    
+    func editEntries(_ date: String, index: Int) {
+        self.selectedIndex = index
+        self.performSegue(withIdentifier: "GymToAddEdit", sender: nil)
+    }
+    
+    func deleteEntries(_ date: String, index: Int) {
+        self.data.remove(at: index)
+        self.tableView.reloadData()
+    }
     
 }
 
 extension GymViewController: UITableViewDelegate {
     
  
-    /// <#Description#>
+    /// Table View on Click
     ///
     /// - Parameters:
-    ///   - tableView: <#tableView description#>
-    ///   - indexPath: <#indexPath description#>
+    ///   - tableView: tableView description
+    ///   - indexPath: indexPath description
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "GymToDetails", sender: nil)
     }

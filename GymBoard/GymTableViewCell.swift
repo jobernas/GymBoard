@@ -23,7 +23,7 @@ class GymTableViewCell: UITableViewCell {
      * Update View Cell UI
      */
     private func updateUI(){
-        labelTitle?.text = "\(entry!.label)"
+        labelTitle?.text = "\(entry!.getLabel())"
         labelValue?.text = "\(entry!.value) \(entry!.unit)"
     }
     

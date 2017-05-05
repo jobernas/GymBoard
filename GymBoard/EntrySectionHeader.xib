@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EntrySectionHeader" customModule="GymBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="imgDelete" destination="vYd-ZQ-d1t" id="8IJ-8C-sJO"/>
+                <outlet property="imgEdit" destination="qaf-6a-CLE" id="nJv-c9-sVf"/>
+                <outlet property="txtTitleSection" destination="S9r-Lp-zgN" id="7Yp-kA-d19"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ElX-XI-z0G">
+                    <rect key="frame" x="15" y="0.0" width="345" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9r-Lp-zgN">
+                            <rect key="frame" x="0.0" y="0.0" width="253" height="64"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_edit" translatesAutoresizingMaskIntoConstraints="NO" id="qaf-6a-CLE">
+                            <rect key="frame" x="263" y="0.0" width="36" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="71j-Af-S9Q"/>
+                            </constraints>
+                        </imageView>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_del" translatesAutoresizingMaskIntoConstraints="NO" id="vYd-ZQ-d1t">
+                            <rect key="frame" x="309" y="0.0" width="36" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="yhu-Bb-7yR"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ElX-XI-z0G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9x9-zB-O4d"/>
+                <constraint firstAttribute="trailing" secondItem="ElX-XI-z0G" secondAttribute="trailing" constant="15" id="Nux-MC-7aU"/>
+                <constraint firstAttribute="bottom" secondItem="ElX-XI-z0G" secondAttribute="bottom" id="Txs-pv-tTL"/>
+                <constraint firstItem="ElX-XI-z0G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="iJR-US-u9T"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_del" width="32" height="32"/>
+        <image name="ic_edit" width="32" height="32"/>
+    </resources>
+</document>

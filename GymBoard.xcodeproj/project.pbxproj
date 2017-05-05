@@ -15,6 +15,9 @@
 		C518EC971E6DF02500331D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C518EC951E6DF02500331D86 /* LaunchScreen.storyboard */; };
 		C518ECA21E6DF02500331D86 /* GymBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518ECA11E6DF02500331D86 /* GymBoardTests.swift */; };
 		C518ECAD1E6DF02500331D86 /* GymBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518ECAC1E6DF02500331D86 /* GymBoardUITests.swift */; };
+		C526751F1EBB32C700B31E23 /* EntryCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526751E1EBB32C700B31E23 /* EntryCRUD.swift */; };
+		C52675281EBB93F000B31E23 /* EntrySectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52675271EBB93F000B31E23 /* EntrySectionHeader.xib */; };
+		C526752A1EBB94B200B31E23 /* EntrySectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52675291EBB94B200B31E23 /* EntrySectionHeader.swift */; };
 		C54B67951E8D079D000562B6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67931E8D079D000562B6 /* Realm.framework */; };
 		C54B67961E8D079D000562B6 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67931E8D079D000562B6 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C54B67971E8D079D000562B6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67941E8D079D000562B6 /* RealmSwift.framework */; };
@@ -82,6 +85,9 @@
 		C518ECA81E6DF02500331D86 /* GymBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C518ECAC1E6DF02500331D86 /* GymBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymBoardUITests.swift; sourceTree = "<group>"; };
 		C518ECAE1E6DF02500331D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C526751E1EBB32C700B31E23 /* EntryCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCRUD.swift; sourceTree = "<group>"; };
+		C52675271EBB93F000B31E23 /* EntrySectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntrySectionHeader.xib; sourceTree = "<group>"; };
+		C52675291EBB94B200B31E23 /* EntrySectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrySectionHeader.swift; sourceTree = "<group>"; };
 		C54B67931E8D079D000562B6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		C54B67941E8D079D000562B6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		C56E63FB1E6F337E00A65B03 /* GymViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
@@ -162,7 +168,7 @@
 		C518EC8B1E6DF02500331D86 /* GymBoard */ = {
 			isa = PBXGroup;
 			children = (
-				C518EC901E6DF02500331D86 /* Main.storyboard */,
+				C52675201EBB8C1400B31E23 /* Layouts */,
 				C5D525B11E8C17E1000B73CC /* Config */,
 				C5D525B41E8C17FE000B73CC /* ViewControllers */,
 				C5D525B21E8C17EB000B73CC /* Objects */,
@@ -191,10 +197,20 @@
 			path = GymBoardUITests;
 			sourceTree = "<group>";
 		};
+		C52675201EBB8C1400B31E23 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				C518EC901E6DF02500331D86 /* Main.storyboard */,
+				C52675271EBB93F000B31E23 /* EntrySectionHeader.xib */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
 		C563A48A1E9D129100346A82 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C59F61E01E9CE002000C7073 /* ToastMessage.swift */,
+				C52675291EBB94B200B31E23 /* EntrySectionHeader.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -214,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				C5778BF81E7017050074E607 /* Entry.swift */,
+				C526751E1EBB32C700B31E23 /* EntryCRUD.swift */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -366,6 +383,7 @@
 				C518EC971E6DF02500331D86 /* LaunchScreen.storyboard in Resources */,
 				C518EC941E6DF02500331D86 /* Assets.xcassets in Resources */,
 				C518EC921E6DF02500331D86 /* Main.storyboard in Resources */,
+				C52675281EBB93F000B31E23 /* EntrySectionHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,10 +548,12 @@
 			files = (
 				C51130B81E9BE2E000A8E943 /* AddNewViewController.swift in Sources */,
 				C5778BF91E7017050074E607 /* Entry.swift in Sources */,
+				C526751F1EBB32C700B31E23 /* EntryCRUD.swift in Sources */,
 				C59F61DF1E9CDDCC000C7073 /* TimeManager.swift in Sources */,
 				C59F61E11E9CE002000C7073 /* ToastMessage.swift in Sources */,
 				C56E63FE1E6F346700A65B03 /* GymTableViewCell.swift in Sources */,
 				C56E63FC1E6F337E00A65B03 /* GymViewController.swift in Sources */,
+				C526752A1EBB94B200B31E23 /* EntrySectionHeader.swift in Sources */,
 				C518EC8D1E6DF02500331D86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +717,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jobernas.GymBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -715,6 +736,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jobernas.GymBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

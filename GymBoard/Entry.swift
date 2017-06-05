@@ -20,6 +20,7 @@ class Entry : Object {
     static let TYPE_BMR = 6
     static let TYPE_IDDMET = 7
     static let TYPE_VIS_FAT = 8
+    static let TYPE_LEAN_MASS = 9
     
     dynamic var id = NSUUID().uuidString
     dynamic var type: Int = Entry.TYPE_UNKNOWN
@@ -58,6 +59,8 @@ class Entry : Object {
             return "IDD Met:"
         case Entry.TYPE_VIS_FAT:
             return "Visceral Fat:"
+        case Entry.TYPE_LEAN_MASS:
+            return "Lean Mass:"
         default:
             return "Unknown"
         }

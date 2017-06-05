@@ -22,6 +22,7 @@ class AddNewViewController: SuperViewController {
     @IBOutlet weak var edtBMI: UITextField!
     @IBOutlet weak var edtFatMass: UITextField!
     @IBOutlet weak var edtWater: UITextField!
+    @IBOutlet weak var edtLeanMass: UITextField!
     @IBOutlet weak var edtPhyEval: UITextField!
     @IBOutlet weak var edtBoneMass: UITextField!
     @IBOutlet weak var edtBMR: UITextField!
@@ -65,6 +66,12 @@ class AddNewViewController: SuperViewController {
     var water: Double = 0.0 {
         didSet {
             self.updateEntry(key: Entry.TYPE_WATER, newValue: self.water, unit: "%", edtView: self.edtWater)
+        }
+    }
+    
+    var leanMass: Double = 0.0 {
+        didSet {
+            self.updateEntry(key: Entry.TYPE_LEAN_MASS, newValue: self.leanMass, unit: "Kg", edtView: self.edtLeanMass)
         }
     }
     
@@ -162,6 +169,7 @@ class AddNewViewController: SuperViewController {
         self.edtBMR?.text = "\(self.bmr)"
         self.edtIddMet?.text = "\(self.iddMet)"
         self.edtViscFat?.text = "\(self.viscFat)"
+        self.edtLeanMass?.text = "\(self.leanMass)"
         
         //Init Delegates
         self.edtWeight?.delegate = self
@@ -173,6 +181,7 @@ class AddNewViewController: SuperViewController {
         self.edtBMR?.delegate = self
         self.edtIddMet?.delegate = self
         self.edtViscFat?.delegate = self
+        self.edtLeanMass?.delegate = self
     }
 
     //Set Date Picker
@@ -223,6 +232,8 @@ class AddNewViewController: SuperViewController {
             self.iddMet = value
         case 8:
             self.viscFat = value
+        case 9:
+            self.leanMass = value
         default:
             break
         }
@@ -248,6 +259,8 @@ class AddNewViewController: SuperViewController {
             return self.iddMet
         case 8:
             return self.viscFat
+        case 9:
+            return self.leanMass
         default:
             return 0.0
         }
@@ -296,7 +309,7 @@ class AddNewViewController: SuperViewController {
     @IBAction func saveNewEntry(_ sender: UIBarButtonItem) {
         print("Save and Close")
         print(self.form)
-        if self.form.count == 9 {
+        if self.form.count == 10 {
             for (_, value) in self.form {
                 value.save()
             }

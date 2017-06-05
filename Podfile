@@ -7,6 +7,9 @@ target 'GymBoard' do
 
   #Hue Colors
   pod 'Hue'
+  
+  #Charts and Charts for Realm
+  pod 'Charts'
 
   # Pods for GymBoard
   

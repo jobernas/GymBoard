@@ -47,11 +47,11 @@ class Entry : Object {
         case Entry.TYPE_FAT_MASS:
             return "Fat Mass:"
         case Entry.TYPE_WATER:
-            return "Water"
+            return "Water:"
         case Entry.TYPE_PHYSICAL_EVAL:
             return "Physical Evaluation:"
         case Entry.TYPE_BONE_MASS:
-            return "Bone Mass"
+            return "Bone Mass:"
         case Entry.TYPE_BMR:
             return "BMR:"
         case Entry.TYPE_IDDMET:

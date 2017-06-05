@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19A0A1DD662861EEDED0B150 /* Pods_GymBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272ED08F23AFA01EDAE87B02 /* Pods_GymBoardUITests.framework */; };
+		C503986E1ECF472900D490F1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503986D1ECF472900D490F1 /* DetailsViewController.swift */; };
 		C51130B81E9BE2E000A8E943 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51130B71E9BE2E000A8E943 /* AddNewViewController.swift */; };
 		C518EC8D1E6DF02500331D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518EC8C1E6DF02500331D86 /* AppDelegate.swift */; };
 		C518EC921E6DF02500331D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C518EC901E6DF02500331D86 /* Main.storyboard */; };
@@ -18,15 +19,17 @@
 		C526751F1EBB32C700B31E23 /* EntryCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526751E1EBB32C700B31E23 /* EntryCRUD.swift */; };
 		C52675281EBB93F000B31E23 /* EntrySectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52675271EBB93F000B31E23 /* EntrySectionHeader.xib */; };
 		C526752A1EBB94B200B31E23 /* EntrySectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52675291EBB94B200B31E23 /* EntrySectionHeader.swift */; };
-		C54B67951E8D079D000562B6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67931E8D079D000562B6 /* Realm.framework */; };
-		C54B67961E8D079D000562B6 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67931E8D079D000562B6 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C54B67971E8D079D000562B6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67941E8D079D000562B6 /* RealmSwift.framework */; };
-		C54B67981E8D079D000562B6 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67941E8D079D000562B6 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C53B15821ED73D180070A4A7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53B15811ED73D180070A4A7 /* String.swift */; };
 		C56E63FC1E6F337E00A65B03 /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E63FB1E6F337E00A65B03 /* GymViewController.swift */; };
 		C56E63FE1E6F346700A65B03 /* GymTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56E63FD1E6F346700A65B03 /* GymTableViewCell.swift */; };
 		C5778BF91E7017050074E607 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5778BF81E7017050074E607 /* Entry.swift */; };
+		C58859001ED83D5700E5A7C6 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58858FF1ED83D5700E5A7C6 /* SuperViewController.swift */; };
 		C59F61DF1E9CDDCC000C7073 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59F61DE1E9CDDCC000C7073 /* TimeManager.swift */; };
 		C59F61E11E9CE002000C7073 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59F61E01E9CE002000C7073 /* ToastMessage.swift */; };
+		C5EF8D381EE57F960004C519 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67931E8D079D000562B6 /* Realm.framework */; };
+		C5EF8D391EE57F960004C519 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67931E8D079D000562B6 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5EF8D3B1EE57F990004C519 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67941E8D079D000562B6 /* RealmSwift.framework */; };
+		C5EF8D3C1EE57F990004C519 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C54B67941E8D079D000562B6 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D408D410C0239C69558D8CCF /* Pods_GymBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7F5B2C45352C6BCCCACAEE /* Pods_GymBoard.framework */; };
 		D928662754EEA66587573362 /* Pods_GymBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160F02F832CBF94761BD443F /* Pods_GymBoardTests.framework */; };
 /* End PBXBuildFile section */
@@ -49,14 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C54B67991E8D079D000562B6 /* Embed Frameworks */ = {
+		C5EF8D3A1EE57F960004C519 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C54B67981E8D079D000562B6 /* RealmSwift.framework in Embed Frameworks */,
-				C54B67961E8D079D000562B6 /* Realm.framework in Embed Frameworks */,
+				C5EF8D3C1EE57F990004C519 /* RealmSwift.framework in Embed Frameworks */,
+				C5EF8D391EE57F960004C519 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +75,7 @@
 		3D45F44C9F8A561688BECB71 /* Pods-GymBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoard/Pods-GymBoard.release.xcconfig"; sourceTree = "<group>"; };
 		8405B22288506880277ED289 /* Pods-GymBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoardTests/Pods-GymBoardTests.release.xcconfig"; sourceTree = "<group>"; };
 		8FD7257D99B86DABFB02BB16 /* Pods-GymBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoard/Pods-GymBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		C503986D1ECF472900D490F1 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		C51130B71E9BE2E000A8E943 /* AddNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
 		C518EC891E6DF02500331D86 /* GymBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C518EC8C1E6DF02500331D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,13 +92,17 @@
 		C526751E1EBB32C700B31E23 /* EntryCRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCRUD.swift; sourceTree = "<group>"; };
 		C52675271EBB93F000B31E23 /* EntrySectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntrySectionHeader.xib; sourceTree = "<group>"; };
 		C52675291EBB94B200B31E23 /* EntrySectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrySectionHeader.swift; sourceTree = "<group>"; };
+		C53B15811ED73D180070A4A7 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C54B67931E8D079D000562B6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		C54B67941E8D079D000562B6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		C56E63FB1E6F337E00A65B03 /* GymViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
 		C56E63FD1E6F346700A65B03 /* GymTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymTableViewCell.swift; sourceTree = "<group>"; };
 		C5778BF81E7017050074E607 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		C58858FF1ED83D5700E5A7C6 /* SuperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		C59F61DE1E9CDDCC000C7073 /* TimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 		C59F61E01E9CE002000C7073 /* ToastMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
+		C5EF8D2F1EE57EA10004C519 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../realm-swift-2.8.0/ios/swift-3.1/Realm.framework"; sourceTree = "<group>"; };
+		C5EF8D301EE57EA10004C519 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../realm-swift-2.8.0/ios/swift-3.1/RealmSwift.framework"; sourceTree = "<group>"; };
 		EA3857175DD21CDF5F2EA177 /* Pods-GymBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBoardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymBoardTests/Pods-GymBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,8 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54B67971E8D079D000562B6 /* RealmSwift.framework in Frameworks */,
-				C54B67951E8D079D000562B6 /* Realm.framework in Frameworks */,
+				C5EF8D381EE57F960004C519 /* Realm.framework in Frameworks */,
+				C5EF8D3B1EE57F990004C519 /* RealmSwift.framework in Frameworks */,
 				D408D410C0239C69558D8CCF /* Pods_GymBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +183,7 @@
 				C5D525B31E8C17F4000B73CC /* Adapters */,
 				C563A48A1E9D129100346A82 /* Views */,
 				C59F61DE1E9CDDCC000C7073 /* TimeManager.swift */,
+				C53B15811ED73D180070A4A7 /* String.swift */,
 			);
 			path = GymBoard;
 			sourceTree = "<group>";
@@ -246,8 +255,10 @@
 		C5D525B41E8C17FE000B73CC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C58858FF1ED83D5700E5A7C6 /* SuperViewController.swift */,
 				C56E63FB1E6F337E00A65B03 /* GymViewController.swift */,
 				C51130B71E9BE2E000A8E943 /* AddNewViewController.swift */,
+				C503986D1ECF472900D490F1 /* DetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -255,6 +266,8 @@
 		F51322BEDE08BA7392B1E133 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5EF8D2F1EE57EA10004C519 /* Realm.framework */,
+				C5EF8D301EE57EA10004C519 /* RealmSwift.framework */,
 				2B7F5B2C45352C6BCCCACAEE /* Pods_GymBoard.framework */,
 				160F02F832CBF94761BD443F /* Pods_GymBoardTests.framework */,
 				272ED08F23AFA01EDAE87B02 /* Pods_GymBoardUITests.framework */,
@@ -273,9 +286,9 @@
 				C518EC851E6DF02500331D86 /* Sources */,
 				C518EC861E6DF02500331D86 /* Frameworks */,
 				C518EC871E6DF02500331D86 /* Resources */,
-				C54B67991E8D079D000562B6 /* Embed Frameworks */,
 				23EB3A4FC7BBB57E6461597A /* [CP] Embed Pods Frameworks */,
 				4CFB5E5EC4226E258D2FCD5B /* [CP] Copy Pods Resources */,
+				C5EF8D3A1EE57F960004C519 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -547,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C51130B81E9BE2E000A8E943 /* AddNewViewController.swift in Sources */,
+				C53B15821ED73D180070A4A7 /* String.swift in Sources */,
 				C5778BF91E7017050074E607 /* Entry.swift in Sources */,
 				C526751F1EBB32C700B31E23 /* EntryCRUD.swift in Sources */,
 				C59F61DF1E9CDDCC000C7073 /* TimeManager.swift in Sources */,
@@ -555,6 +569,8 @@
 				C56E63FC1E6F337E00A65B03 /* GymViewController.swift in Sources */,
 				C526752A1EBB94B200B31E23 /* EntrySectionHeader.swift in Sources */,
 				C518EC8D1E6DF02500331D86 /* AppDelegate.swift in Sources */,
+				C58859001ED83D5700E5A7C6 /* SuperViewController.swift in Sources */,
+				C503986E1ECF472900D490F1 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GymViewController: UIViewController {
+class GymViewController: SuperViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,6 +19,7 @@ class GymViewController: UIViewController {
         super.viewDidLoad()
 
         //DEBUG
+        self.title = "Gym Board"
 //         EntryCRUD.clearDB()
         
         // Do any additional setup after loading the view.
@@ -42,7 +43,12 @@ class GymViewController: UIViewController {
                 self.selectedIndex = -1
             }
         }
+        
+        if segue.identifier == "GymToDetails", let detailsVC = segue.destination as? DetailsViewController, let entry = sender as? Entry {
+            detailsVC.setData(entry)
+        }
     }
+    
     
     private func loadDataFromDB(){
         self.data.removeAll()
@@ -125,7 +131,8 @@ extension GymViewController: UITableViewDelegate {
     ///   - tableView: tableView description
     ///   - indexPath: indexPath description
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "GymToDetails", sender: nil)
+        let group = self.data[indexPath.section]
+        self.performSegue(withIdentifier: "GymToDetails", sender: group.1[indexPath.row])
     }
     
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddNewViewController: UIViewController {
+class AddNewViewController: SuperViewController {
 
     //Lets
     let DONE = 0;
@@ -27,7 +27,10 @@ class AddNewViewController: UIViewController {
     @IBOutlet weak var edtBMR: UITextField!
     @IBOutlet weak var edtIddMet: UITextField!
     @IBOutlet weak var edtViscFat: UITextField!
-    
+    @IBOutlet weak var svContainer: UIScrollView!
+    @IBOutlet weak var cBottomScrollContainer: NSLayoutConstraint!
+//    @IBOutlet var steppers: [UIStepper]!
+
     /***
      * Computed Vars
      */
@@ -100,7 +103,10 @@ class AddNewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //Add Observers
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(sender:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(sender:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
         if self.date == nil {
             let date = TimeManager.getTodaysDate()
             self.setData(date, array: Array(EntryCRUD.getDailyEntries(date)))
@@ -117,9 +123,8 @@ class AddNewViewController: UIViewController {
         self.view.addGestureRecognizer(gesture)
         
         //Init UI
+        self.title = "Add New Entry"
         self.setUI()
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -140,6 +145,9 @@ class AddNewViewController: UIViewController {
         }
         newEntry.update(key: key, date: self.date!, value: newValue, unit: unit)
         edtView?.text = "\(newValue)"
+//        if let edt = edtView, let stepper = self.getStepperByTag(edt.tag) {
+//            stepper.value = newValue
+//        }
         self.form[key] = newEntry
     }
     
@@ -195,7 +203,7 @@ class AddNewViewController: UIViewController {
         return toolBar
     }
     
-    private func setValues(_ id:Int, value:Double){
+    fileprivate func setValues(_ id:Int, value:Double){
         switch id {
         case 0:
             self.weight = value
@@ -219,6 +227,48 @@ class AddNewViewController: UIViewController {
             break
         }
     }
+    
+    fileprivate func getValue(_ id:Int) ->Double {
+        switch id {
+        case 0:
+            return self.weight
+        case 1:
+            return self.bmi
+        case 2:
+            return self.fatMass
+        case 3:
+            return self.water
+        case 4:
+            return self.phyEval
+        case 5:
+            return self.boneMass
+        case 6:
+            return self.bmr
+        case 7:
+            return self.iddMet
+        case 8:
+            return self.viscFat
+        default:
+            return 0.0
+        }
+    }
+    
+    /// Get Stepper for Tag X
+    ///
+    /// - Parameter tag: 0 to 9
+    /// - Returns: UIStepper Instance
+//    fileprivate func getStepperByTag(_ tag: Int) -> UIStepper? {
+//        var stepper: UIStepper?
+//        
+//        //Search for First Stepper witht the Tag == tag
+//        for stepp in steppers {
+//            if stepp.tag == tag {
+//                stepper = stepp
+//                break
+//            }
+//        }
+//        return stepper
+//    }
     
     public func setData(_ date:String, array data:Array<Entry>){
         self.date = date
@@ -256,6 +306,14 @@ class AddNewViewController: UIViewController {
         }
     }
     
+    @IBAction func cancelNewEntry(_ sender: UIBarButtonItem) {
+        print("Cancel and Close")
+        if let date = self.date {
+            EntryCRUD.deleteEntriesForDate(date)
+        }
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
     func donePicker (sender:UIBarButtonItem)
     {
         // Put something here
@@ -276,6 +334,23 @@ class AddNewViewController: UIViewController {
             self.edtDate.endEditing(true)
         }
     }
+    
+    func keyboardWillShow(sender: NSNotification) {
+        let info = sender.userInfo!
+        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+            
+        UIView.animate(withDuration: 0.1, animations: { () -> Void in
+            self.cBottomScrollContainer.constant = (keyboardFrame.size.height) //Move view 180 points upward
+        })
+        
+    }
+    
+    func keyboardWillHide(sender: NSNotification) {
+        UIView.animate(withDuration: 0.1, animations: { () -> Void in
+            self.cBottomScrollContainer.constant = 0
+        })
+    }
+
 }
 
 extension AddNewViewController: UITextFieldDelegate {
@@ -284,17 +359,35 @@ extension AddNewViewController: UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
-        // Try to find next responder
-//        if textField == edtUsername {
-//            edtPassword.becomeFirstResponder()
-//        } else {
-//            // Not found, so remove keyboard.
-//            textField.resignFirstResponder()
-//            validator.validate(self)
-//        }
-        // Do not add a line break
-        return false
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        var tmpString = textField.text
+        tmpString = tmpString?.replacingOccurrences(of: ",", with: ".")
+        
+        var result = 0.0
+        if let value = tmpString, value.isInt || value.isDouble {
+            result = Double(value)!
+            self.setValues(textField.tag, value: result)
+        }else{ //the Value is not valid reset to the previous value
+            result = self.getValue(textField.tag)
+            let value = String(result)
+            textField.text = value
+        }
+    }
+    
+    // MARK: - UITextFieldDelegate Methods
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        if(string == "," || string == "."){
+//            //Add decimal
+//            if let value = textField.text {
+//                textField.text = "\(value)."
+//            }
+//        }
+//        return true
+//    }
 }
 

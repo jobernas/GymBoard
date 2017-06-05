@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Hue.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,6 +32,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>026D56C6DED05997EF11A0DEFD996558</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1ED402F32C19C9C2186FBEB2811F3C9E</key>
 		<dict>
 			<key>primary</key>
@@ -37,12 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF7691A08117DCF5A61FCDF362FC0DD7</key>
+		<key>D928EA4FC576EFE6DBB0CA08C63F263A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D928EA4FC576EFE6DBB0CA08C63F263A</key>
+		<key>F307B842FF76B2DE6C55DB67C0885325</key>
 		<dict>
 			<key>primary</key>
 			<true/>

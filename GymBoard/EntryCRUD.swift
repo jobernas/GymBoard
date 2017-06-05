@@ -47,7 +47,15 @@ class EntryCRUD {
         } catch let error as NSError {
             fatalError(error.localizedDescription)
         }
-        
+    }
+    
+    public static func getEntriesForType(_ type:Int) ->Results<Entry> {
+        do {
+            let realm = try Realm()
+            return realm.objects(Entry.self).filter("type = %@", type)
+        } catch let error as NSError {
+            fatalError(error.localizedDescription)
+        }
     }
 
     /// Get All Entries Available in the Database
